@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!--header section-->
+<header class="header">
+     <a href="#" class="logo">
+        <img src="/images/Your paragraph text.png" alt="">
+     </a>
+    <nav class="navbar" id="navs" style="display: none;">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="#review">Review</a>
+    </nav>
+    <nav class="navbar" id="navs">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="#review">Review</a>
+    </nav>
+    
+    <div class="icons">
+       <div class="fa-solid fa-magnifying-glass" id="search-icon"></div> 
+       <div class="fa-solid fa-cart-shopping" id="cart-icon"></div>
+       <div class="fa-solid fa-bars" id="menu-icon"></div>
+    </div>
+    <div class="search-btn">
+        <input type="search" name="" id="search" placeholder="Search Item....">
+        <label for="search" class="fa-solid fa-magnifying-glass"></label>
+    </div>
+    <div class="cart" id="cart" style="display: none;">
+       <div id ="cart1"></div>
+        <div class="totamt">
+            <h3>Total</h3>
+            <h2 id="totals">$ 0.00</h2>
+        </div>
+        <a href="#" class="checkout-btn" id="chk">Check0ut</a>
+        </div>
+    </div>
+    
+</header>
+
+<!--new section-->
+ 
+<section class="home-sec" id="section">
+<div class="content-sec">
+    <h2>look good</h2>
+  <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+     Tempora tenetur neque voluptatem debitis,
+     consectetur dolore ut minus accusantium sed 
+     velit mollitia! Asperiores tenetur tempora ipsum cum
+      provident iure officiis! Quam!
+    </p>
+    <a href="#" class="buy-btn">BUY NOW</a>
+</div>
+</section>
+<!--section ends-->
+<!--about sec -->
+<section class="about-sec" id="about">
+   <h1 class="about-heading"><span>about us</span></h1>
+   <div class="row">
+        <div class="about-img">
+            <img src="./images/🍂🍂🍂.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h3>OUR BRANDS UNIQUENESS</h3>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea at ullam voluptas nisi. 
+                Sed voluptatum dicta adipisci impedit. Possimus repudiandae labore itaque soluta culpa 
+                iste officia omnis atque nihil dolorum.
+            </P>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum ipsam beatae aut 
+                dignissimos, fuga quaerat ullam optio numquam accusantium perferendis nostrum expedita
+                ad cum dolores eaque eius distinctio impedit.<br>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </P>
+        </div>
+   </div>
+</section>
+<!--end of about sec-->
+<!--menu section starts-->
+<section class="menu" id="menu">
+    <h1 class="menu-heading">Menu</h1>
+    <div class="box-container">
+        <div class="box" id="men1">
+            <img src="./images/pexels-salah-darwish-17047659.png" alt="">
+            <h3>salah</h3>
+            <div class="prices"><span>90</span></div>
+            <a href="#" class="buy-btn" onclick="addtocart(men1)">add to cart</a>
+        </div>
+        <div class="box" id="men2">
+            <img src="./images/vape.png" alt="">
+            <h3> vape</h3>
+            <div class="prices"><span>20</span></div>
+            <a href="#" class="buy-btn" onclick="addtocart(men2)">add to cart</a>
+        </div>
+        <div class="box" id="men3">
+            <img src="./images/Your paragraph text.png" alt="">
+            <h3 > ray</h3>
+            <div class="prices"><span>340</span></div>
+            <a href="#" class="buy-btn" onclick="addtocart(men3)">add to cart</a>
+        </div>
+        <div class="box" id="men4">
+            <img src="./images/vape.png" alt="">
+            <h3> vape</h3>
+            <div class="prices"><span>70</span></div>
+            <a href="#" class="buy-btn" onclick="addtocart(men4)">add to cart</a>
+        </div>
+        <div class="box" id="men5">
+            <img src="./images/vape.png" alt="">
+            <h3> vape</h3>
+            <div class="prices"><span>4</span></div>
+            <a href="#" class="buy-btn" onclick="addtocart(men5)">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./images/vape.png" alt="">
+            <h3> vape</h3>
+            <div class="prices"><span>40</span></div>
+            <a href="#" class="buy-btn" onclick="addtocart(menu)">add to cart</a>
+        </div>
+    </div>
+</section>
+<!--menu section ends-->
+<!--product section starts-->
+<section class="products" id="products">
+    <h1 class="menu-heading"><span>products</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa-solid fa-cart-shopping" id="cart-icon"></a>
+                <a href="#" class="fa-regular fa-heart"></a>
+            </div>
+            <div class="about-img">
+               <img src="./images/vape.png" alt="">          
+            </div>
+            <div class="content">
+                <h3> vape</h3>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prices"><span>$50.99</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa-solid fa-cart-shopping" id="cart-icon"></a>
+                <a href="#" class="fa-regular fa-heart"></a>
+            </div>
+            <div class="about-img">
+               <img src="./images/vape.png" alt="">          
+            </div>
+            <div class="content">
+                <h3> vape</h3>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prices"><span>$50.99</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa-solid fa-cart-shopping" id="cart-icon"></a>
+                <a href="#" class="fa-regular fa-heart"></a>
+            </div>
+            <div class="about-img">
+               <img src="./images/vape.png" alt="">          
+            </div>
+            <div class="content">
+                <h3> vape</h3>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prices"><span>$50.99</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa-solid fa-cart-shopping" id="cart-icon"></a>
+                <a href="#" class="fa-regular fa-heart"></a>
+            </div>
+            <div class="about-img">
+               <img src="./images/vape.png" alt="">          
+            </div>
+            <div class="content">
+                <h3> vape</h3>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prices"><span>$50.99</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa-solid fa-cart-shopping" id="cart-icon"></a>
+                <a href="#" class="fa-regular fa-heart"></a>
+            </div>
+            <div class="about-img">
+               <img src="./images/vape.png" alt="">          
+            </div>
+            <div class="content">
+                <h3> vape</h3>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prices"><span>$50.99</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa-solid fa-cart-shopping" id="cart-icon"></a>
+                <a href="#" class="fa-regular fa-heart"></a>
+            </div>
+            <div class="about-img">
+               <img src="./images/vape.png" alt="">          
+            </div>
+            <div class="content">
+                <h3> vape</h3>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prices"><span>$50.99</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--product section ends-->
+<!--review section starts-->
+<section class="review" id="review">
+   <h1 class="menu-heading"> Review</h1>
+   <div class="box-container">
+    <div class="box">
+        <img src="./images/right-quotes-symbol.png" class="quote">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia illo doloremque nulla
+             incidunt accusantium nihil iure soluta totam voluptatibus. 
+            Cumque dolores deleniti commodi eius, provident placeat iste totam corrupti dignissimos.
+        </p>
+        <img src="./images/Your paragraph text.png" class="user" alt="">
+        <h3>Junior</h3>
+        <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./images/right-quotes-symbol.png" alt="" class="quote">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia illo doloremque nulla
+             incidunt accusantium nihil iure soluta totam voluptatibus. 
+            Cumque dolores deleniti commodi eius, provident placeat iste totam corrupti dignissimos.
+        </p>
+        <img src="./images/Your paragraph text.png" class="user" alt="">
+        <h3>Junior</h3>
+        <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./images/right-quotes-symbol.png" alt="" class="quote">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia illo doloremque nulla
+             incidunt accusantium nihil iure soluta totam voluptatibus. 
+            Cumque dolores deleniti commodi eius, provident placeat iste totam corrupti dignissimos.
+        </p>
+        <img src="./images/Your paragraph text.png" class="user" alt="">
+        <h3>Junior</h3>
+        <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+    </div>
+   </div>
+</section> 
+<!--review section ends-->
+<!--contact section starts here-->
+<section class="contact" id="contact">
+    <h1 class="menu-heading"><span>contact us</span></h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.715396795339!2d-0.056973923084373476!3d51.628422401854635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ef0de15547f%3A0x1895193220713c17!2sBounces%20Rd%2C%20London%20N9%208HY!5e0!3m2!1sen!2suk!4v1694278068618!5m2!1sen!2suk"
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <form action="#" method="post">
+            <h3>Reach out</h3>
+            <div class="inputbox">
+                <span class="fa-solid fa-user"></span>
+                <input type="text" name="name" placeholder="<NAME>" required><br/>
+            </div>
+            <div class="inputbox">
+                <span class="fa-solid fa-envelope"></span>
+                <input type="email"  placeholder="Email" required><br/>
+            </div>
+            <div class="inputbox">
+                <span class="fa-solid fa-phone"></span>
+                <input type="number"  placeholder="Number" required><br/>
+            </div>
+            <input type="submit" value="contact us" class="buy-btn">
+        </form>
+    </div>
+</section>
+<!--contact section ends here-->
+<script src="https://kit.fontawesome.com/1557f53f26.js" crossorigin="anonymous"></script>
+<script src="/index.js"></script>
+</body>
+</html>
